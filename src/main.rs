@@ -15,8 +15,13 @@ enum ReportType {
 
 #[derive(ClapParser)]
 #[command(name = "class-method")]
+#[command(version, disable_version_flag = true)]
 #[command(about = "PHP クラス/メソッド行数レポート")]
 struct Cli {
+    /// バージョン表示
+    #[arg(short = 'v', long = "version", action = clap::ArgAction::Version)]
+    _version: (),
+
     /// 表示件数
     #[arg(short = 'n', default_value = "10")]
     top_n: usize,
