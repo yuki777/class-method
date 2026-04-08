@@ -2,7 +2,7 @@
 
 PHP ファイルのクラス・メソッド行数を計測し、行数の多い順にランキング表示する CLI ツール。
 
-[tree-sitter-php](https://github.com/tree-sitter/tree-sitter-php) による高速な構文解析と [rayon](https://github.com/rayon-rs/rayon) による並列処理で、数百ファイルを一瞬で解析します。
+[tree-sitter-php](https://github.com/tree-sitter/tree-sitter-php) による高速な構文解析と [rayon](https://github.com/rayon-rs/rayon) による並列処理で、数百ファイルを一瞬で解析します。Bash + PHPMD 版と比較して約 **500倍高速** (21.4秒 → 0.043秒, 883ファイル)。
 
 ## インストール
 
